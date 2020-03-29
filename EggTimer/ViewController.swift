@@ -10,6 +10,17 @@ import UIKit
 
 class ViewController: UIViewController {
     
-
-
+    let eggTimes = ["Soft": 5, "Medium": 7, "Hard": 12]
+    
+    @IBAction func hardnessSelected(_ sender: UIButton) {
+        // print(sender.currentTitle)
+        let hardness = sender.currentTitle! // gets the TITLE of the button or label
+        
+        let result = eggTimes[hardness]!
+    
+        print(result)
+    }
+    
 }
+    
+
